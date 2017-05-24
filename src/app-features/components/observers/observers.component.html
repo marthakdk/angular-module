@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let quote of quotes">
+                            <td>{{quote.ID}}</td>
+                            <td><a target="_blank" [attr.href]="quote.link">{{quote.title}}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <b>Angular Component Using Observables!</b>
+
+            <h6 style="margin-bottom: 0">VALUES:</h6>
+            <div *ngFor="let value of values">- {{ value }}</div>
+
+            <h6 style="margin-bottom: 0">ERRORs:</h6>
+            <div>Errors: {{anyErrors}}</div>
+
+            <h6 style="margin-bottom: 0">FINISHED:</h6>
+            <div>Finished: {{ finished }}</div>
+
+            <button style="margin-top: 2rem;" (click)="init()">Init</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <b>Simple Post Request!</b>
+        </div>
+    </div>
+</div>

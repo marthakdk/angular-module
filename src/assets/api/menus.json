@@ -1,0 +1,17 @@
+{
+    "menu": {
+        "items": [{
+                "name": "Dashboard",
+                "path": "dashboard"
+            },
+            {
+                "name": "Health",
+                "path": "health"
+            },
+            {
+                "name": "Observers",
+                "path": "observers"
+            }
+        ]
+    }
+}

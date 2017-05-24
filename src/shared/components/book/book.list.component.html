@@ -1,0 +1,37 @@
+<div class="container">
+    <p>This is the component hits get request on <a href="https://httpbin.org/" target="_blank">http bin</a></p>
+
+    <!--<div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Authors</th>
+                            <th>Publisher</th>
+                            <th>Published Date</th>
+                            <th>Description</th>
+                            <th>Page Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let book of books">
+                            <td>{{$index}}</td>
+                            <td><a target="_blank" [attr.href]="book.selfLink">{{book.volumeInfo.title}}</a></td>
+                            <td>{{book.volumeInfo.authors[0]}}</td>
+                            <td>{{book.volumeInfo.publisher}}</td>
+                            <td>{{book.volumeInfo.publishedDate}}</td>
+                            <td>{{book.volumeInfo.description}}</td>
+                            <td>{{book.volumeInfo.pageCount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>-->
+
+    <pre>{{books | json}}</pre>
+</div>
